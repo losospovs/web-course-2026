@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Быки и коровы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1 class="app__title">Быки и коровы</h1>
+    <p class="app__hint">
+      Угадайте последовательность из 4 неповторяющихся цифр.
+    </p>
+
+    <form class="form" id="guess-form">
+      <input
+        class="form__input"
+        id="guess-input"
+        type="text"
+        inputmode="numeric"
+        maxlength="4"
+        placeholder="4 цифры"
+        autocomplete="off"
+      >
+      <button class="form__button" type="submit" id="check-btn">Проверить</button>
+    </form>
+
+    <p class="alert" id="alert"></p>
+
+    <div class="bar">
+      <span class="bar__item">Попыток: <b id="attempts">0</b></span>
+      <button class="bar__new" type="button" id="new-game">Новая игра</button>
+    </div>
+
+    <ul class="history" id="history"></ul>
+
+    <section class="legend">
+      <div class="legend__item">
+        <img class="legend__img" src="img/bull.jpg" alt="Бык">
+        <h3 class="legend__title">Бык</h3>
+        <p class="legend__text">Цифра угадана и стоит на своём месте.</p>
+      </div>
+
+      <div class="legend__item">
+        <img class="legend__img" src="img/cow.jpg" alt="Корова">
+        <h3 class="legend__title">Корова</h3>
+        <p class="legend__text">Цифра есть в числе, но стоит не на своём месте.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
