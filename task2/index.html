@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Листовой — чай с высокогорных плантаций</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="header" id="top">
+      <nav class="nav container">
+        <button class="burger" type="button" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="#features">О чае</a></li>
+          <li><a href="#cards">Каталог</a></li>
+          <li><a href="#contact">Заявка</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero container">
+        <h1 class="hero__title">Листовой<br>чай</h1>
+        <p class="hero__text">
+          Высокогорные плантации, ручной сбор и свежая обжарка.
+          Доставляем по России за один день.
+        </p>
+        <a href="#cards" class="btn">В каталог</a>
+      </div>
+    </header>
+
+    <div class="bg-band">
+
+      <section class="features" id="features">
+        <div class="features__box container">
+          <ul class="features__list">
+
+            <li class="feature">
+              <span class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <circle cx="12" cy="12" r="5"/>
+                  <circle cx="12" cy="12" r="1.6" fill="currentColor"/>
+                </svg>
+              </span>
+              <h3 class="feature__title">Ручной сбор</h3>
+              <p class="feature__text">Собираем только верхние листья — первые два.</p>
+            </li>
+
+            <li class="feature">
+              <span class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 21V8l8-5 8 5v13"/>
+                  <path d="M2 21h20"/>
+                  <path d="M12 10v5M9.5 12.5h5"/>
+                  <path d="M10 21v-4h4v4"/>
+                </svg>
+              </span>
+              <h3 class="feature__title">Сертификат</h3>
+              <p class="feature__text">Каждая партия проходит лабораторный контроль.</p>
+            </li>
+
+            <li class="feature">
+              <span class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="8" y="11" width="8" height="10" rx="1.5"/>
+                  <path d="M9 11V9h6v2"/>
+                  <path d="M12 9c0-1.8 2-2 2-3.6 0-1.4-1.4-2.4-2-3.4-.6 1-2 2-2 3.4C10 7 12 7.2 12 9z"/>
+                </svg>
+              </span>
+              <h3 class="feature__title">Свежая обжарка</h3>
+              <p class="feature__text">Обжариваем малыми партиями под заказ.</p>
+            </li>
+
+            <li class="feature">
+              <span class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 7v5l3.5 2"/>
+                </svg>
+              </span>
+              <h3 class="feature__title">Доставка за день</h3>
+              <p class="feature__text">Курьер по городу или СДЭК по России.</p>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="cards" id="cards">
+        <ul class="cards__list container">
+
+          <li class="card card--green">
+            <span class="card__icon card__icon--circle card__icon--lg">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="6.5" r="3"/>
+                <circle cx="12" cy="17.5" r="3"/>
+                <circle cx="6.5" cy="12" r="3"/>
+                <circle cx="17.5" cy="12" r="3"/>
+                <circle cx="12" cy="12" r="2.4" fill="#e6d5b8"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Сенча</h3>
+            <p class="card__text">Классический японский зелёный чай с травянистым вкусом.</p>
+          </li>
+
+          <li class="card card--brown">
+            <span class="card__icon card__icon--circle card__icon--sm">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="12" cy="7" r="2.6"/>
+                <circle cx="12" cy="17" r="2.6"/>
+                <circle cx="7" cy="12" r="2.6"/>
+                <circle cx="17" cy="12" r="2.6"/>
+                <circle cx="12" cy="12" r="2" fill="#5a3524"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Улун</h3>
+            <p class="card__text">Полуферментированный чай с медовыми и цветочными нотами.</p>
+          </li>
+
+          <li class="card card--tan">
+            <span class="card__icon card__icon--bare">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v18"/>
+                <path d="M12 6 9 3M12 6l3-3"/>
+                <path d="M12 10 9 7M12 10l3-3"/>
+                <path d="M12 14 9 11M12 14l3-3"/>
+                <path d="M12 18 9 15M12 18l3-3"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Пуэр</h3>
+            <p class="card__text">Постферментированный чай с землистым вкусом и плотным телом.</p>
+          </li>
+
+          <li class="card card--photo" aria-hidden="true"></li>
+
+          <li class="card card--deep">
+            <span class="card__icon card__icon--circle">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <ellipse cx="9"  cy="14" rx="4.5" ry="3"/>
+                <ellipse cx="16" cy="11" rx="3.5" ry="2.6"/>
+                <ellipse cx="13" cy="17" rx="3"   ry="2"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Белый пион</h3>
+            <p class="card__text">Нежный белый чай с тонким вкусом и лёгкой сладостью.</p>
+          </li>
+
+          <li class="card card--darkgreen">
+            <span class="card__icon card__icon--hex">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round">
+                <path d="M5 9h14M5 12h14M5 15h14"/>
+              </svg>
+            </span>
+            <h3 class="card__title">Матча</h3>
+            <p class="card__text">Молотый зелёный чай для классической японской церемонии.</p>
+          </li>
+
+        </ul>
+      </section>
+
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="contact__inner container">
+        <h2 class="contact__title">Подобрать чай</h2>
+
+        <form class="form">
+          <div class="form__row">
+            <label class="field">
+              <span class="field__label">Имя</span>
+              <input type="text" name="name" placeholder="Как вас зовут" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+          </div>
+
+          <label class="field">
+            <span class="field__label">Сообщение</span>
+            <textarea name="message" rows="5" placeholder="Расскажите о своих вкусах — подберём сорт"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__text">Листовой — 2025</p>
+    </footer>
+
+  </div>
+</body>
+</html>
