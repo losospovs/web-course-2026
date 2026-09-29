@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px 16px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #a8cfb9;
+  color: #eaf1e0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  background: rgba(31, 69, 54, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 28px 22px;
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+}
+
+.app__title {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #cfe0b5;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  flex: 1;
+  min-height: 44px;
+  padding: 10px 18px;
+  font: inherit;
+  color: #eaf1e0;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.form__input::placeholder {
+  color: rgba(234, 241, 224, 0.45);
+}
+
+.form__input:hover {
+  border-color: rgba(255, 255, 255, 0.36);
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: #e6d5b8;
+  background: rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 0 3px rgba(230, 213, 184, 0.22);
+}
+
+.form__button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 22px;
+  font: inherit;
+  font-weight: 600;
+  color: #2b5a48;
+  background: #e6d5b8;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.form__button:hover {
+  background: #f2e3c8;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.form__button:active {
+  transform: translateY(0);
+}
+
+.form__button:focus-visible {
+  outline: 3px solid #e6d5b8;
+  outline-offset: 3px;
+}
+
+.alert {
+  margin: 0 0 14px;
+  min-height: 20px;
+  font-size: 0.85rem;
+  color: #ffb4a2;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.filters__btn {
+  flex: 1;
+  min-height: 40px;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 0.9rem;
+  color: #eaf1e0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filters__btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.filters__btn--active {
+  color: #2b5a48;
+  background: #cfe0b5;
+  border-color: #cfe0b5;
+}
+
+.filters__btn--active:hover {
+  background: #e0ecc9;
+}
+
+.counter {
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  color: rgba(234, 241, 224, 0.75);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.item__checkbox {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: #cfe0b5;
+}
+
+.item__text {
+  flex: 1;
+  word-break: break-word;
+  color: #eaf1e0;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.item.completed .item__text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.item__delete {
+  min-height: 36px;
+  min-width: 36px;
+  padding: 6px 14px;
+  font: inherit;
+  font-size: 0.85rem;
+  color: #e6d5b8;
+  background: transparent;
+  border: 1px solid rgba(230, 213, 184, 0.35);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.item__delete:hover {
+  color: #2b5a48;
+  background: #e6d5b8;
+  border-color: #e6d5b8;
+}
+
+.empty {
+  margin: 0;
+  padding: 16px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(234, 241, 224, 0.5);
+}
